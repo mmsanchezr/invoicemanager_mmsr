@@ -1,0 +1,11 @@
+<div class="container">
+    <form action="">
+        <label for="cliente">num_cliente</label>
+        <input type="number" id="cliente" name="cliente" [(ngModel)]="facturaNueva.id_cliente">
+        <br>
+        <label for="fecha">fecha</label>
+        <input type="text" name="fecha" id="fecha" [(ngModel)]="facturaNueva.fecha">
+        <br>
+        <button  (click)="agregarFactura()">Guardar</button>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+    <button   [routerLink]="['/agregar']" routerLinkActive="router-link-active" >Nueva Factura</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">cliente</th>
+        <th scope="col">fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let factura of lista">
+        <td>{{factura.num_factura}}</td>
+        <td>{{factura.id_cliente}}</td>
+        <td>{{factura.fecha}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
